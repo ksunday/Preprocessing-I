@@ -134,16 +134,28 @@ html,
 body {
   height: 100%;
 }
+.smallheader {
+  color: black;
+  text-align: center;
+  font-style: italic;
+  text-decoration-line: underline;
+}
 .fontfamily {
   margin-top: 1rem;
   padding: 5px;
   font-family: cursive;
+}
+.historytext {
+  font-size: larger;
+  text-align: center;
 }
 .titletext {
   color: red;
   text-decoration: underline;
   font-size: larger;
   display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .container {
   width: 800px;
@@ -152,8 +164,14 @@ body {
 .container header {
   justify-content: space-between;
   display: flex;
-  flex-direction: row-reverse;
-  align-items: End;
+}
+.container header .title {
+  font-size: large;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+  margin-left: 1rem;
 }
 .AboutSkills .About-Me {
   display: flex;
@@ -164,6 +182,8 @@ body {
   text-decoration: underline;
   font-size: larger;
   display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .About-Me p {
   margin-top: 1rem;
@@ -171,34 +191,52 @@ body {
   font-family: cursive;
   border: red solid;
 }
-.AboutSkills .Skills h2 {
-  margin-top: 1.6rem;
+.Skills1 {
+  display: flex;
+  justify-content: space-around;
+}
+.Skills1 .skills h2 {
   color: red;
   text-decoration: underline;
   font-size: larger;
   display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.Skills1 {
+  display: flex;
+  justify-content: space-around;
+}
+.Skills1 .History-section h2 {
+  color: red;
+  text-decoration: underline;
+  font-size: larger;
+  display: flex;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
   justify-content: center;
 }
-.Skills ul {
-  list-style: none;
-  margin-top: 1.3rem;
-}
-.Skills ul li {
+.skills ul li {
   margin-top: 1rem;
   padding: 5px;
   font-family: cursive;
+}
+.Skills1 {
+  display: flex;
+  justify-content: space-around;
+}
+.Skills1 .History-section h3 {
+  color: black;
   text-align: center;
+  font-style: italic;
+  text-decoration-line: underline;
 }
-.History-Contact .History-section h2 {
-  color: red;
-  text-decoration: underline;
-  font-size: larger;
+.Skills1 {
   display: flex;
-  margin-top: 1.6rem;
-  justify-content: center;
+  justify-content: space-around;
 }
-.History-Contact .History-section h3 {
-  margin-top: 1rem;
-  padding: 5px;
-  font-family: cursive;
+.Skills1 .History-section h4 {
+  font-size: larger;
+  text-align: center;
+  margin-top: 0.5rem;
 }

@@ -59,19 +59,33 @@ html, body {
 @boldletters: Black;
 @titleletters: red; 
 
+.smallheader{
+	color: black;
+	text-align: center;
+	font-style: italic;
+	text-decoration-line: underline;
+}
 .fontfamily{
 	margin-top: 1rem;
     
     padding: 5px;
-    font-family: cursive;
+	font-family: cursive;
+	
+
 
 }
-
+.historytext{
+	font-size: larger;
+    text-align: center;
+}
 .titletext{
 	color: @titleletters;
 	text-decoration: underline;
 	font-size: larger;
 	display: flex;
+	margin-top:.5rem;
+	margin-bottom:.5rem; 
+	
 }
 .container{
 	width:800px;
@@ -79,10 +93,21 @@ html, body {
 	header{
 		justify-content: space-between;
     	display: flex;
-    	flex-direction: row-reverse;
-		align-items: End;
+    	
+		
+		.title{
+			font-size: large;
+		}
 		
 	
+	}
+}
+nav{
+	a{
+		text-decoration: none;
+		color:black;
+		margin-left:1rem; 
+		
 	}
 }
 .AboutSkills{
@@ -102,46 +127,53 @@ html, body {
 	border: red solid;
 }
 
-.AboutSkills{
-	.Skills{ 
-		
+.Skills1{
+	display:flex; 
+	justify-content: space-around;
+	.skills{
 		h2{
-			margin-top:1.6rem; 
 			.titletext();
-			justify-content: center; 
+		}
+	}
+}
+
+.Skills1{
+	display:flex; 
+	justify-content: space-around;
+	.History-section{
+		h2{
+			.titletext();
+			margin-top:.5rem;
+			margin-bottom:.5rem; 
+			justify-content: center;
+		}
+	}
+}
+
+.skills{
+	ul{
+		li{
+			.fontfamily();
+		}
+	}
+}
+.Skills1{
+	display:flex; 
+	justify-content: space-around;
+	.History-section{
+		h3{
+			.smallheader();
 			
 		}
 	}
 }
-
-.Skills{
-	ul{
-		list-style: none; 
-		margin-top: 1.3rem; 
-			li{
-				 .fontfamily(); 
-				 text-align: center; 
-			}
-	}
-}
-.History-Contact{
+.Skills1{
+	display:flex; 
+	justify-content: space-around;
 	.History-section{
-		h2{
-			.titletext(); 
-			margin-top:1.6rem; 
-			justify-content: center;
-
-		}
-
-
-	}
-
-}
-.History-Contact{
-	.History-section{
-		h3{ .fontfamily(); 
-
+		h4{
+			.historytext();
+			margin-top:.5rem; 
 		}
 	}
 }
-
