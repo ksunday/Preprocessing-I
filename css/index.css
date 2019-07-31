@@ -134,11 +134,71 @@ html,
 body {
   height: 100%;
 }
-img {
-  height: 30%;
-  width: 10%;
+.fontfamily {
+  margin-top: 1rem;
+  padding: 5px;
+  font-family: cursive;
+}
+.titletext {
+  color: red;
+  text-decoration: underline;
+  font-size: larger;
+  display: flex;
+}
+.container {
+  width: 800px;
+  margin: 50px auto;
+}
+.container header {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: End;
+}
+.AboutSkills .About-Me {
+  display: flex;
+  flex-direction: column;
+}
+.AboutSkills .About-Me h2 {
+  color: red;
+  text-decoration: underline;
+  font-size: larger;
+  display: flex;
+}
+.About-Me p {
+  margin-top: 1rem;
+  padding: 5px;
+  font-family: cursive;
+  border: red solid;
+}
+.AboutSkills .Skills h2 {
+  margin-top: 1.6rem;
+  color: red;
+  text-decoration: underline;
+  font-size: larger;
   display: flex;
   justify-content: center;
-  align-content: center;
-  align-items: center;
+}
+.Skills ul {
+  list-style: none;
+  margin-top: 1.3rem;
+}
+.Skills ul li {
+  margin-top: 1rem;
+  padding: 5px;
+  font-family: cursive;
+  text-align: center;
+}
+.History-Contact .History-section h2 {
+  color: red;
+  text-decoration: underline;
+  font-size: larger;
+  display: flex;
+  margin-top: 1.6rem;
+  justify-content: center;
+}
+.History-Contact .History-section h3 {
+  margin-top: 1rem;
+  padding: 5px;
+  font-family: cursive;
 }

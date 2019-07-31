@@ -56,13 +56,92 @@ table {
 html, body {
     height: 100%;
 }
+@boldletters: Black;
+@titleletters: red; 
 
-img{
-	height:30%;
-	width:10%;
-	display:flex;
-	justify-content: center;
-	align-content: center;
-	align-items: center;
+.fontfamily{
+	margin-top: 1rem;
+    
+    padding: 5px;
+    font-family: cursive;
 
 }
+
+.titletext{
+	color: @titleletters;
+	text-decoration: underline;
+	font-size: larger;
+	display: flex;
+}
+.container{
+	width:800px;
+	margin:50px auto; 
+	header{
+		justify-content: space-between;
+    	display: flex;
+    	flex-direction: row-reverse;
+		align-items: End;
+		
+	
+	}
+}
+.AboutSkills{
+	.About-Me{
+		display: flex;
+		flex-direction: column;
+
+		h2{
+			.titletext(); 
+		}
+
+	}
+}
+
+.About-Me p{
+	.fontfamily();
+	border: red solid;
+}
+
+.AboutSkills{
+	.Skills{ 
+		
+		h2{
+			margin-top:1.6rem; 
+			.titletext();
+			justify-content: center; 
+			
+		}
+	}
+}
+
+.Skills{
+	ul{
+		list-style: none; 
+		margin-top: 1.3rem; 
+			li{
+				 .fontfamily(); 
+				 text-align: center; 
+			}
+	}
+}
+.History-Contact{
+	.History-section{
+		h2{
+			.titletext(); 
+			margin-top:1.6rem; 
+			justify-content: center;
+
+		}
+
+
+	}
+
+}
+.History-Contact{
+	.History-section{
+		h3{ .fontfamily(); 
+
+		}
+	}
+}
+
