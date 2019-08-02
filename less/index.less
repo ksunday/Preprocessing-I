@@ -56,4 +56,187 @@ table {
 html, body {
     height: 100%;
 }
+@boldletters: Black;
+@titleletters: red; 
 
+.smallheader{
+	color: black;
+	text-align: center;
+	font-style: italic;
+	text-decoration-line: underline;
+}
+.fontfamily{
+	margin-top: 1rem;
+    
+    padding: 5px;
+	font-family: cursive;
+	
+
+
+}
+.historytext{
+	font-size: larger;
+    text-align: center;
+}
+.titletext{
+	color: @titleletters;
+	text-decoration: underline;
+	font-size: larger;
+	display: flex;
+	margin-top:.5rem;
+	margin-bottom:.5rem; 
+	
+} 
+
+.QL{
+	@media (max-width: 500px){
+		display:none; 
+	}
+}
+.container{
+	width:800px;
+	margin:50px auto; 
+	@media (max-width: 500px){
+	width: 100%; 
+	padding: 20px; 	
+	}
+	header{
+		justify-content: space-between;
+		display: flex;
+		@media (max-width: 500px){
+			justify-content: center; 
+			flex-direction: column-reverse; 
+		}
+
+		
+		.title{
+			font-size: large;
+			@media (max-width: 500px){
+				
+				text-align: center;
+			}
+
+		}
+		
+	
+	}
+}
+.QL1{
+	
+	display:none; 
+	@media (max-width: 500px){
+		display: flex; 
+		width:50%; 
+		height:50%; 
+		justify-content: center; 
+		margin-left: 25%;
+		margin-top: 3%;
+	}
+}
+nav{
+	@media (max-width: 500px){
+		flex-direction: column; 
+		text-align: center; 
+		justify-content: space-evenly; 
+		margin-bottom:1rem; 
+	}
+	a{
+		text-decoration: none;
+		color:black;
+		margin-left:1rem; 
+		@media (max-width: 500px){
+			flex-direction: column; 
+			margin-left: 1.5rem;
+			margin-right: 1.5rem;
+			margin-bottom: 0rem
+
+		}
+	}
+}
+.AboutSkills{
+	.About-Me{
+		display: flex;
+		flex-direction: column;
+
+		h2{
+			@media (max-width: 500px){
+				justify-content: center;
+				margin-top:1rem; 
+				margin-bottom:0rem; 
+			}
+			.titletext(); 
+		}
+
+	}
+}
+
+.About-Me p{
+	@media (max-width: 500px){
+		margin-top: 0.3rem; }
+	.fontfamily();
+	border: red solid;
+}
+
+.About-Me .Ism{
+	@media (max-width: 500px){
+		display:none; 
+	}
+}
+.Skills1{
+	display:flex; 
+	justify-content: space-around;
+	.skills{
+		h2{
+			.titletext();
+			@media (max-width: 500px){
+				margin-left: 4rem; }
+		}
+	}
+}
+
+.Skills1{
+	display:flex; 
+	justify-content: space-around;
+	.History-section{
+		h2{
+			.titletext();
+			margin-top:.5rem;
+			margin-bottom:.5rem; 
+			justify-content: center;
+			@media (max-width: 500px){
+				text-align: center; }
+		}
+	}
+}
+
+.skills{
+	ul{
+		li{
+			.fontfamily();
+		}
+	}
+}
+.Skills1{
+	display:flex; 
+	justify-content: space-around;
+	.History-section{
+		h3{
+			.smallheader();
+			
+		}
+	}
+}
+.Skills1{
+	display:flex; 
+	justify-content: space-around;
+	.History-section{
+		h4{
+			.historytext();
+			margin-top:.5rem; 
+		}
+	}
+}
+.Contact-section{
+	@media (max-width: 500px){
+		text-align: center; }
+}
